@@ -6,7 +6,6 @@ public class Main {
         task2();
         task3();
         task4();
-        task5();
     }
 
     public static void task1 () {
@@ -22,33 +21,33 @@ public class Main {
         int[] numbers = {1, 2, 3};
         float[] fractionalNumbers = {1.57f, 7.654f, 9.986f};
         int[] bigNumbers = {45_768, 768_769, 6_768_745};
-        System.out.println(Arrays.toString(numbers));
-        System.out.println(Arrays.toString(fractionalNumbers));
-        System.out.println(Arrays.toString(bigNumbers));
-//        for (int i = 0; i < 3; i++) {
-//            if (i == 2) {
-//                System.out.print(numbers[i]);
-//                break;
-//            }
-//            System.out.print(numbers[i]+", ");
-//        }
-//        System.out.println();
-//        for (int i = 0; i < 3; i++) {
-//            if (i == 2) {
-//                System.out.print(fractionalNumbers[i]);
-//                break;
-//            }
-//            System.out.print(fractionalNumbers[i]+", ");
-//        }
-//        System.out.println();
-//        for (int i = 0; i < 3; i++) {
-//            if (i == 2) {
-//                System.out.print(bigNumbers[i]);
-//                break;
-//            }
-//            System.out.print(bigNumbers[i]+", ");
-//        }
-//        System.out.println();
+//        System.out.println(Arrays.toString(numbers));
+//        System.out.println(Arrays.toString(fractionalNumbers));
+//        System.out.println(Arrays.toString(bigNumbers));
+        for (int i = 0; i < numbers.length; i++) {
+            if (i == numbers.length - 1) {
+                System.out.print(numbers[i]);
+                break;
+            }
+            System.out.print(numbers[i]+", ");
+        }
+        System.out.println();
+        for (int i = 0; i < fractionalNumbers.length; i++) {
+            if (i == fractionalNumbers.length -1) {
+                System.out.print(fractionalNumbers[i]);
+                break;
+            }
+            System.out.print(fractionalNumbers[i]+", ");
+        }
+        System.out.println();
+        for (int i = 0; i < bigNumbers.length; i++) {
+            if (i == bigNumbers.length - 1) {
+                System.out.print(bigNumbers[i]);
+                break;
+            }
+            System.out.print(bigNumbers[i]+", ");
+        }
+        System.out.println();
     }
     public static void task3 () {
         System.out.println("Задача 3");
@@ -56,7 +55,7 @@ public class Main {
         int[] numbers = {1, 2, 3};
         float[] fractionalNumbers = {1.57f, 7.654f, 9.986f};
         int[] bigNumbers = {45_768, 768_769, 6_768_745};
-        for (int i = 2; i >= 0; i--) {
+        for (int i = numbers.length - 1; i >= 0; i--) {
             if (i == 0) {
                 System.out.print(numbers[i]);
                 break;
@@ -64,7 +63,7 @@ public class Main {
             System.out.print(numbers[i]+", ");
         }
         System.out.println();
-        for (int i = 2; i >= 0; i--) {
+        for (int i = numbers.length - 1; i >= 0; i--) {
             if (i == 0) {
                 System.out.print(fractionalNumbers[i]);
                 break;
@@ -72,7 +71,7 @@ public class Main {
             System.out.print(fractionalNumbers[i]+", ");
         }
         System.out.println();
-        for (int i = 2; i >= 0; i--) {
+        for (int i = numbers.length - 1; i >= 0; i--) {
             if (i == 0) {
                 System.out.print(bigNumbers[i]);
                 break;
@@ -88,7 +87,7 @@ public class Main {
         int[] bigNumbers = {45_768, 768_769, 6_768_745};
         for (int i = 0; i < 3; i++) {
             if (i % 2 == 0){
-                System.out.println(numbers[i]+1);
+                System.out.print(numbers[i]+1+" ");
             }
         }
         for (int i = 0; i < 3; i++) {
@@ -97,10 +96,6 @@ public class Main {
                 break;
             }
         }
-    }
-    public static void task5 () {
-        System.out.println("Задача 5");
-        //
     }
 }
 
